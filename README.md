@@ -1,4 +1,4 @@
-#About this
+# About this
 
 This is classic Rock, Paper, Scissors! You can play it against another person (not that interesting tho...), or vs. the computer.
 
