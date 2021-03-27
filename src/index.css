@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  margin: 1rem;
+  max-width: 80vw;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 0px rgb(63, 63, 63);
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select, .submit, .goBack{
+  background-color: transparent;
+  color: white;
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-shadow: 2px 1px 0px rgb(104, 104, 104);
+  transform: translateY(var(--translate-y, 0)) translateX(var(--translate-x, 0));
+}
+
+.select {
+  font-size: 1.2rem;
+}
+
+.option1, .option2 {
+  background-color: white;
+  color: black;
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 2px 1px 0px rgb(104, 104, 104);
+  transform: translateY(var(--translate-y, 0)) translateX(var(--translate-x, 0));
+}
+.select:hover, .option1:hover, .option2:hover, .submit:hover, .goBack:hover {
+  --translate-y: 0.1rem;
+  --translate-x: 0.1rem;
+}
+
+.option1:disabled, .option2:disabled {
+  opacity: 0.5;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem 1.5rem 0rem 1.5rem;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.goBack::before {
+  content: "<";
+  margin-right: 1rem;
+}
+
+.submit {
+  margin: 0.5rem;
+}
+
+.submit::after {
+  content: ">";
+  margin-left: 1rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    height: 90vh;
+
+  }
+  .player {
+    width: 45vw;
+  }
+  .option1, .option2 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .option1:hover, .option2:hover {
+    --translate-y: 0;
+    --translate-x: 0;
+  }
+
+  .select {
+    font-size: 1rem;
+  }
+}
