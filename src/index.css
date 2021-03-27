@@ -103,6 +103,22 @@ h3 {
   margin-left: 1rem;
 }
 
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:1; }
+  70%  { opacity:1; }
+  100% { opacity:0; }
+}
+
+.homeTitle::after {
+  content: ":";
+  animation-timing-function: linear;
+  -webkit-animation: flickerAnimation 0.7s infinite;
+  -moz-animation: flickerAnimation 0.7s infinite;
+  -o-animation: flickerAnimation 0.7s infinite;
+  animation: flickerAnimation 0.7s infinite;
+}
+
 @media (max-width: 600px) {
   body {
     height: 90vh;
