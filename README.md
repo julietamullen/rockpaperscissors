@@ -2,8 +2,8 @@
 
 This is classic Rock, Paper, Scissors! You can play it against another person (not that interesting tho...), or vs. the computer.
 
-![Deployment Image](/public/img1.pmg)
-![Deployment Image](/public/img2.pmg)
+![Deployment Image](/public/img1.png)
+![Deployment Image](/public/img2.png)
 
 # Getting Started with Create React App
 
