@@ -2,6 +2,8 @@
 
 This is classic Rock, Paper, Scissors! You can play it against another person (not that interesting tho...), or vs. the computer.
 
+You can see this deployed at: https://rockpaperscissors-theta.vercel.app/
+
 ![Deployment Image](/public/img1.png)
 ![Deployment Image](/public/img2.png)
 
