@@ -56,7 +56,7 @@ function PvP () {
     }
 
     useEffect(() => {disable(p1, choices1)}, [p1])
-    useEffect(() => {disable(p1, choices2)}, [p2])
+    useEffect(() => {disable(p2, choices2)}, [p2])
 
     return (
     <main className="main">
